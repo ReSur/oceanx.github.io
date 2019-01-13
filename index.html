@@ -1,0 +1,480 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鳌海科技 - OceanX - 首页</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css" />
+    <link href='http://cdn.webfont.youziku.com/webfonts/nomal/108133/46870/59bf3f41f629d80f586053e4.css' rel='stylesheet' type='text/css' />
+    <style>
+
+      /* Style for our header texts
+      * --------------------------------------- */
+      h1{
+        font-size: 5em;
+        font-family: arial,helvetica;
+        color: #fff;
+        margin:0;
+      }
+
+      /* Centered texts in each section
+      * --------------------------------------- */
+      .section{
+        text-align:center;
+        background-size: cover;
+      }
+
+      #section0{
+        background-image: url('images/bg1.jpg');
+        background-position: 48.5% 40%;
+      }
+      #section1{
+        background-image: url('images/bg2.jpg');
+      }
+      #section3{
+        background-image: url('images/bg4.jpg');
+      }
+      #section4{
+        background-image: url('images/bg5.jpg');
+      }
+
+      /* Overwriting styles for control arrows for slides
+      * --------------------------------------- */
+      .controlArrow.prev {
+        left: 50px;
+      }
+      .controlArrow.next{
+        right: 50px;
+      }
+
+
+      /* Bottom menu
+      * --------------------------------------- */
+      #infoMenu li a {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+
+  <header class="sticky">
+    <nav class="top-bar">
+      <div class="top-bar-title">
+        <img src="images/logo.png" alt="AOHI TECH">
+      </div>
+      <div data-responsive-toggle="responsive-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+      </div>
+      <div class="top-bar-right"  id="responsive-menu">
+        <ul class="menu">
+          <li class="is-active"><a data-lang="string_home">首页</a></li>
+          <li><a data-lang="string_about">关于我们</a></li>
+          <li><a data-lang="string_products">产品服务</a></li>
+          <li><a data-lang="string_robotics">机器人技术</a></li>
+          <li><a data-lang="string_news">新闻动态</a></li>
+          <li><a data-lang="string_contact">联系我们</a></li>
+          <li><span id="lang_switch"></span></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div id="fullpage">
+    <div class="section first_page" id="section0">
+      <div class="grid-x grid-padding-x">
+        <!-- <div class="left_icon icon large-2 cell grid-x align-middle">
+          <a class="cell">
+            <span>
+              <img src="http://www.laureltechnologies.com/wp-content/uploads/2016/12/ocean.png">
+              <p>水下机器人</p>
+            </span>
+          </a>
+        </div> -->
+        <div class="large-8 text-center cell large-offset-2">
+          <h1 class="cssd383860ce1a665">深海探<span class="no-letter-spacing">索</span></h1>
+          <h4>EXPLORE OCEAN <span class="no-letter-spacing">X</span></h4>
+        </div>
+        <!-- <div class="right_icon icon large-2 cell grid-x align-middle">
+          <a class="cell">
+            <span>
+              <img src="http://www.laureltechnologies.com/wp-content/uploads/2016/12/physical.png">
+              <p>海洋装备</p>
+            </span>
+          </a>
+        </div> -->
+      </div>
+      <a href="#secondPage" class="down-arrow"><div class="arr_bottom_animation"></div></a>
+    </div>
+    <div class="section second_page" id="section1">
+      <div class="second_page_content grid-y medium-grid-frame align-center">
+        <div class="grid-x align-center cell">
+          <div class="cell small-8"  style="max-width: 900px">
+            <img src="images/aohi_logo.png" style="margin-right: 17px; padding-right: 24px; border-right: 1px solid #eee;"><img src="images/logo.png">
+            <h6 class="sub-title" id="string_introduction_title" data-lang="string_introduction_title">海洋探索综合服务商</h6>
+            <div class="hr"></div>
+            <p data-lang="string_introduction">OCEANX 是鳌海旗下的深海探索业务，其产品技术领域主要为海洋探测和科学调查。拥有一支由应用科学家，仪器系统专家，高级工程技术人员，和管理人员组成的专业化团队。长期活跃于深海矿产调查、资源勘探、深海取样、生物培养等领域</p>
+            <button class="btn"><a href="#" data-lang="string_about_aohi">关于鳌海</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section third_page" id="section2">
+        <div class="grid-x align-middle">
+          <div class="service-cover cell medium-4" style="background-image: url('images/third_page_bg1.jpg');">
+            <div class="service-container">
+              <div class="service">
+                <img src="images/icon1.png">
+                <hr>
+                <p data-lang="string_service1">深海生物培养</p>
+              </div>
+              <div class="service-describe">
+                <p data-lang="string_service1_describe">地球物理勘探和海洋调查仪器应用研究</p>
+              </div>
+            </div>
+          </div>
+          <div class="service-cover cell medium-4" style="background-image: url('images/third_page_bg2.jpg');">
+            <div class="service-container">
+              <div class="service">
+                <img src="images/icon2.png">
+                <hr>
+                <p data-lang="string_service2">深海观测</p>
+              </div>
+              <div class="service-describe">
+                <p data-lang="string_service2_describe">联合用户与世界知名仪器厂家研发集成勘探仪器系统</p>
+              </div>
+            </div>
+          </div>
+          <div class="service-cover cell medium-4" style="background-image: url('images/third_page_bg3.jpg');">
+            <div class="service-container">
+              <div class="service">
+                <img src="images/icon3.png">
+                <hr>
+                <p data-lang="string_service3">深海取样与探测</p>
+              </div>
+              <div class="service-describe">
+                <p data-lang="string_service3_describe">自主研发和联合研发新技术产品和投资项目</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="section fourth-page" id="section3">
+      <div class="grid-x">
+        <div class="cell small-12"><h2 data-lang="string_history">大事记</h2></div>
+        <div class="cell small-12"><div class="hr"></div></div>
+        <div class="cell small-12">
+          <div class="one-center grid-x grid-padding-x align-middle">
+            <div class="cell large-4" style="padding-left: 190px; padding-right: 20px; ">
+              <ul class="tabs vertical" data-tabs id="timeTab">
+                <li class="tabs-title is-active">
+                  <a href="#time1">2017.01</a>
+                </li>
+                <li class="tabs-title">
+                  <a href="#time2">2016.05</a>
+                </li>
+                <li class="tabs-title">
+                  <a href="#time3">2015.12</a>
+                </li>
+                <li class="tabs-title">
+                  <a href="#time4">2015.02</a>
+                </li>
+                <li class="tabs-title">
+                  <a href="#time5">2014.09</a>
+                </li>
+              </ul>
+            </div>
+            <div class="cell large-8" style="border-left: 1px solid #888;">
+              <div class="tabs-content vertical" data-tabs-content="timeTab">
+                <div class="tabs-panel is-active" id="time1">
+                  <div class="grid-x align-middle">
+                    <div class="cell large-8">
+                         <div class="time-cover-container grid-x align-middle align-center">
+                           <div class="time-cover">
+                             <div class="time-img" style="background-image: url('images/fourth_page_img1.jpg');"></div>
+                           </div>
+                         </div>
+                    </div>
+                    <div class="cell large-4 large-text-left">
+                      <p data-lang="string_history1">2017年1月，OCEANX 事业部正式独立运营</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs-panel" id="time2">
+                  <div class="grid-x align-middle">
+                    <div class="cell large-8">
+                      <div class="time-cover-container grid-x align-middle align-center">
+                        <div class="time-cover">
+                          <div class="time-img" style="background-image: url('images/fourth_page_img2.jpg');"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cell large-4 large-text-left">
+                      <p data-lang="string_history2">2016年5月，参与研发浙江大学重点研发计划项目“水下直升机”</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs-panel" id="time3">
+                  <div class="grid-x align-middle">
+                    <div class="cell large-8">
+                      <div class="time-cover-container grid-x align-middle align-center">
+                        <div class="time-cover">
+                          <div class="time-img" style="background-image: url('images/fourth_page_img3.jpg');"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cell large-4 large-text-left">
+                      <p data-lang="string_history3">2015年12月 团队派遣成员参加大洋40航次科考调查</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs-panel" id="time4">
+                  <div class="grid-x align-middle">
+                    <div class="cell large-8">
+                      <div class="time-cover-container grid-x align-middle align-center">
+                        <div class="time-cover">
+                          <div class="time-img" style="background-image: url('images/fourth_page_img4.jpg');"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cell large-4 large-text-left">
+                      <p data-lang="string_history4">2015年2月，团队派遣成员参与 大洋34航次科学考察</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs-panel" id="time5">
+                  <div class="grid-x align-middle">
+                    <div class="cell large-8">
+                      <div class="time-cover-container grid-x align-middle align-center">
+                        <div class="time-cover">
+                          <div class="time-img" style="background-image: url('images/fourth_page_img6.jpg');"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cell large-4 large-text-left">
+                      <p data-lang="string_history5">2014年9月 团队成立并同时进军深海探测领域</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cell small-12">
+          <button class="btn"><a href="#" data-lang="string_all_history">全部大事记</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="section last-page" id="section4">
+      <div class="grid-x">
+        <div class="cell small-12"><h2 data-lang="string_news">新闻中心</h2></div>
+        <div class="hr"></div>
+        <div class="cell small-12">
+          <div class="one-center grid-x grid-padding-x">
+            <div class="cell medium-4">
+              <a class="news-cover" href="#" style="background-image: url('images/last_page_img1.jpg');">
+                <img src="images/circles.png">
+                <div class="news-container">
+                  <h5 data-lang="string_news1">OCEANX 事业部正式独立运营</h5>
+                  <div class="hover-hide">
+                    <p>2017-09-18</p>
+                  </div>
+                  <div class="hover-show">
+                    <p data-lang="string_news1_describe">2017年1月，OCEANX 事业部正式独立运营</p>
+                    <img src="images/arrow_right.png">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cell medium-4">
+              <a class="news-cover" href="#" style="background-image: url('images/last_page_img2.jpg');">
+                <img src="images/circles.png">
+                <div class="news-container">
+                  <h5 data-lang="string_news2">参加大洋40航次科考调查</h5>
+                  <div class="hover-hide">
+                    <p>2017-09-12</p>
+                  </div>
+                  <div class="hover-show">
+                    <p data-lang="string_news2_describe">2015年12月 团队派遣成员参加大洋40航次科考调查</p>
+                    <img src="images/arrow_right.png">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cell medium-4">
+              <a class="news-cover" href="#" style="background-image: url('images/last_page_img3.jpg');">
+                <img src="images/circles.png">
+                <div class="news-container">
+                  <h5 data-lang="string_news3">参与重点研发计划项目“水下直升机”</h5>
+                  <div class="hover-hide">
+                    <p>2017-09-13</p>
+                  </div>
+                  <div class="hover-show">
+                    <p data-lang="string_news3_describe">2016年5月 参与研发浙江大学重点研发计划项目“水下直升机”</p>
+                    <img src="images/arrow_right.png">
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cell small-12">
+          <button class="btn"><a href="#" data-lang="string_all_news">全部新闻</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="footer section fp-auto-height" id="footer">
+      <div class="footer-top grid-x">
+          <img src="images/logo.png">
+      </div>
+      <div class="footer-bottom">
+        <div class="links grid-x grid-padding-x text-left">
+          <div class="cell large-2 medium-4">
+            <h6 data-lang="string_about">关于我们</h6>
+            <ul class="vertical menu">
+              <li><a href="#" data-lang="string_aohi_tech">鳌海科技</a></li>
+              <li><a href="#" data-lang="string_service">业务范围</a></li>
+              <li><a href="#" data-lang="string_news">新闻动态</a></li>
+              <li><a href="#" data-lang="string_history">大事记</a></li>
+            </ul>
+          </div>
+          <div class="cell large-2 medium-4">
+            <h6 data-lang="string_products">产品和解决方案</h6>
+            <ul class="vertical menu">
+              <li><a href="#" data-lang="string_robotics">水下机器人</a></li>
+              <li><a href="#" data-lang="string_aohi_tech">海洋装备</a></li>
+            </ul>
+          </div>
+          <div class="cell large-2 medium-4">
+            <h6 data-lang="string_news">新闻中心</h6>
+            <ul class="vertical menu">
+              <li><a href="#" data-lang="string_service">新闻动态</a></li>
+              <li><a href="#" data-lang="string_news">媒体报道</a></li>
+              <li><a href="#" data-lang="string_history">展会活动</a></li>
+            </ul>
+          </div>
+          <div class="cell large-2 medium-4">
+            <h6 data-lang="string_service">业务领域</h6>
+            <ul class="vertical menu">
+              <li><a href="#" data-lang="string_history">科学调查</a></li>
+              <li><a href="#" data-lang="string_service">资源勘探</a></li>
+              <li><a href="#" data-lang="string_news">工程检测</a></li>
+              <li><a href="#" data-lang="string_aohi_tech">政府服务</a></li>
+              <li><a href="#" data-lang="string_contact">海洋监测</a></li>
+            </ul>
+          </div>
+          <div class="cell large-2 medium-4">
+            <h6 data-lang="string_contact">联系我们</h6>
+            <ul class="vertical menu">
+              <li><a href="#" data-lang="string_hangzhou">杭州</a></li>
+              <li><a href="#" data-lang="string_beijing">北京</a></li>
+              <li><a href="#" data-lang="string_shanghai">上海</a></li>
+            </ul>
+          </div>
+          <div class="cell large-2 medium-4">
+            <img src="images/qrcode.png">
+          </div>
+        </div>
+        <div class="copyright grid-x">
+          <div class="cell large-8 text-left">Copyright © 2017 <span data-lang="string_copyright">杭州鳌海海洋工程技术有限公司版权所有.</span> <a href="http://www.miitbeian.gov.cn/">浙ICP备14036103号</a></div>
+          <div class="cell large-4 text-right">Power by Foundation & fullPage.js</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="scroll-to-top" style="display: none;">
+    <img src="images/arr_bottom.png">
+  </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.i18n.properties.min.js"></script>
+    <script src="js/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <script type="text/javascript" src="js/vendors/scrolloverflow.js"></script>
+    <script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
+    <script type="text/javascript">
+        var language_pack = {
+            now_lang : 0, // 0:ch,1:en
+            loadProperties : function(new_lang){
+                var self = this;
+                var tmp_lang = '';
+                if(new_lang == 0){
+                    tmp_lang = 'zh';
+                    $('body').removeClass('en').addClass('zh');
+                }else{
+                    tmp_lang = 'en';
+                    $('body').removeClass('zh').addClass('en');
+                }
+                jQuery.i18n.properties({//加载资浏览器语言对应的资源文件
+                    name: 'strings', //资源文件名称
+                    path: 'js/language/', //资源文件路径
+                    language: tmp_lang,
+                    cache: false,
+                    mode:'map', //用Map的方式使用资源文件中的值
+                    callback: function() {//加载成功后设置显示内容
+                        for(var i in $.i18n.map){
+                            $('[data-lang="'+i+'"]').text($.i18n.map[i]);
+                        }
+                        document.title = $.i18n.map['string_title'];
+                    }
+                });
+                self.now_lang = new_lang;
+            }
+        }
+        $(document).ready(function() {
+            language_pack.loadProperties(0);
+            $('#lang_switch').click(function(){
+                var new_lang;
+                if(language_pack.now_lang == 0){
+                    new_lang = 1;
+                    $('#string_introduction_title').addClass('small-letter-spacing');
+                    $('#lang_switch').addClass('switched');
+                }else{
+                    new_lang = 0;
+                    $('#string_introduction_title').removeClass('small-letter-spacing');
+                    $('#lang_switch').removeClass('switched');
+                }  
+                language_pack.loadProperties(new_lang);
+            });
+            $('#fullpage').fullpage({
+                anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage', ''],
+                navigation: true,
+                navigationPosition: 'right',
+                onLeave: function(index, nextIndex, direction){
+                    var leavingSection = $(this);
+
+                    if(index == 1){
+                        $('.top-bar').css('background-color', 'rgb(15, 27, 44)');
+                        $('#scroll-to-top, #fp-nav').fadeIn();
+                    }
+                    else if(index == 6){
+                        $('#fp-nav').fadeIn();
+                    }
+                },
+                afterLoad: function(anchorLink, index){
+                    var loadedSection = $(this);
+
+                    if(index == 1){
+                        $('.top-bar').css('background-color', 'transparent');
+                        $('#scroll-to-top, #fp-nav').fadeOut();
+                    }
+                    else if(index == 6){
+                        $('#fp-nav').fadeOut();
+                    }
+                }
+            });
+            $('#scroll-to-top').click(function(){
+                $.fn.fullpage.moveTo(1);
+            });
+        });
+    </script>
+    <script>
+      $('.third_page .service').hover(function(){
+      });
+    </script>
+  </body>
+</html>

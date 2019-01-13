@@ -1,0 +1,469 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", "Helvetica", "Arial", sans-serif, 'SimHei';
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+header.sticky {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0px;
+    font-size: 13px;
+}
+.top-bar {
+    padding: 0 40px;
+    -webkit-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+    transition: background-color .3s ease;
+}
+
+header {
+    background: none;
+    -webkit-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+    transition: background-color .3s ease;
+}
+
+.top-bar .menu li {
+    padding: 0 11px;
+}
+.top-bar .menu li a {
+    color: white;
+    line-height: 48px;
+    padding: 8px 0;
+}
+
+.top-bar .menu li a:hover, .top-bar .menu li.is-active a {
+    box-shadow: 0 3px 0 #08a8fa;
+}
+a {
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+}
+
+.first_page h1 {
+    font-size: 74px;
+    margin-top: 40px;
+    margin-left: 6px;
+    font-weight: 100;
+    letter-spacing: 30px;
+}
+.first_page h4 {
+    font-size: 19px;
+    color: #b3b6bf;
+    letter-spacing: 13.5px;
+}
+.first_page .no-letter-spacing {
+    letter-spacing: 0;
+}
+/* .first_page .left_icon {
+    background-image: url('http://www.laureltechnologies.com/wp-content/themes/laurel/images/home_blue.png');
+}
+
+.first_page .right_icon {
+    background-image: url('http://www.laureltechnologies.com/wp-content/themes/laurel/images/home_orange.png');
+}
+.first_page .icon {
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    min-height: 150px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-origin: content-box;
+    background-origin: content-box;
+} */
+.first_page p {
+    font-size: 20px;
+}
+.first_page .icon img {
+    padding: 10px;
+}
+.down-arrow {
+    position: absolute;
+    bottom: 60px;
+}
+h2 {
+    font-size: 36px;
+    color: white;
+}
+
+/* .second_page_content {
+    background-image: url('http://www.laureltechnologies.com/wp-content/themes/laurel/images/test_bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+} */
+.btn {
+    padding: 14px 65px;
+    border: 2px solid #08a8fa;
+    border-radius: 6px;
+}
+
+.btn a {
+    color: white;
+}
+
+.btn a:hover {
+    color: #08a8fa;
+}
+
+.btn {
+    margin-top: 60px;
+}
+.second_page #string_introduction_title {
+    letter-spacing: 15px;
+    margin-top: 10px;
+    color: white;
+}
+.second_page #string_introduction_title.small-letter-spacing {
+    letter-spacing: 4px;
+}
+
+.third_page .grid-x {
+    height: 100%;
+}
+.third_page .service-cover {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+}
+.third_page .service-cover:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.third_page .service-cover:hover:after {
+    content: '';
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    background-color: rgba(8, 105, 219, 0.8);
+}
+.third_page .service-container {
+    width: 100%;
+}
+.third_page .service {
+    position: relative;
+    z-index: 2;
+    height: 200px;
+    padding-top: 40px;
+    /* background-image: url('http://www.laureltechnologies.com/wp-content/themes/laurel/images/blue_circle.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.third_page .service-cover:hover .service {
+    background-image: url('http://www.laureltechnologies.com/wp-content/themes/laurel/images/white_circle.png');
+*/}
+.third_page .service-cover:hover .service-describe {
+    display: block;
+}
+.third_page .service-describe {
+    display: none;
+    position: relative;
+    z-index: 2;
+    padding: 0 30px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.hr {
+    height: 3px;
+    width: 30px;
+    background-color: #f05408;
+    margin: 20px auto;
+}
+.third_page hr {
+    border: 2px solid #f05408;
+    width: 20px;
+    margin: 15px auto;
+}
+.tabs, .tabs-content.vertical, .tabs-title>a[aria-selected='true'], .tabs-title>a:hover {
+    border: none;
+    background-color: transparent;
+}
+.tabs-title > a {
+    color: #e6e6e6;
+    font-size: 24px;
+}
+.tabs-title:hover > a {
+    color: #08a8fa;
+}
+.tabs-title > a.active {
+    color: #08a8fa;
+    font-weight: 700;
+}
+.tabs .tabs-title {
+    position: relative;
+}
+.tabs .tabs-title:before {
+    top: 50%;
+}
+.tabs .tabs-title:not(:last-child):after {
+    top: 100%;
+}
+.tabs .tabs-title:before, .tabs .tabs-title:not(:last-child):after {
+    content: '';
+    width: 27px;
+    height: 2px;
+    position: absolute;
+    left: -50px;
+    border-top: 2px solid #b4b4b4;
+}
+.tabs .tabs-title:first-child:before, .tabs .tabs-title:last-child:before {
+    border-top: 2px solid #646464;
+}
+
+.time-cover-container {
+    position: relative;
+    height: 315px;
+
+}
+.time-img {
+    position: relative;
+    z-index: 2;
+    width: 360px;
+    height: 270px;
+    background-position: 50% 50%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.time-cover:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background-image: url('../images/time-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain; */
+}
+.one-center {
+    margin: 0 auto;
+}
+.fourth-page .one-center {
+    max-width: 1280px;
+}
+.last-page .one-center {
+    max-width: 1700px;
+}
+.tabs-panel p {
+    padding-right: 55px;
+}
+
+.news-cover {
+    position: relative;
+    display: block;
+    height: 220px;
+    margin: 5px auto;
+    padding-top: 70px;
+    border-radius: 10px;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.news-cover:hover {
+    padding-top: 32px;
+}
+.news-cover > img {
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.news-container {
+    position: relative;
+    z-index: 3;
+    padding: 0 30px;
+    color: white;
+    font-weight: 300;
+}
+.news-container h5 {
+    font-size: 18px;
+    font-weight: 400;
+}
+.news-cover:hover .news-container .hover-hide {
+    display: none;
+}
+.hover-show {
+    display: none;
+}
+.news-cover:hover .news-container .hover-show {
+    display: block;
+}
+.news-cover:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.news-cover:hover:after {
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    background-color: rgba(8, 105, 219, 0.8);
+}
+#fp-nav {
+    display: none;
+}
+#fp-nav ul li a span {
+    background-color: white !important;
+}
+#scroll-to-top {
+    position: fixed;
+    z-index: 999;
+    bottom: 45px;
+    right: 45px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    box-shadow: 0 0 0 1px rgb(80, 80, 80);
+    border-radius: 5px;
+    padding: 10px 14px;
+    width: 42px;
+    cursor: pointer;
+}
+.tabs .tabs-title > a{
+    outline: none;
+}
+#fp-nav ul li:last-child {
+    display: none
+}
+.footer {
+    background-color: black;
+    color: white;
+}
+.footer .footer-top {
+    margin: 20px 40px;
+}
+.footer .footer-bottom .links {
+    margin: 30px 40px 80px;
+}
+.footer .footer-bottom .links .cell {
+    margin: 20px 0;
+}
+.footer .footer-bottom li a {
+    font-size: 14px;
+    color: #c8c8c8;
+    padding-left: 0;
+}
+.footer .footer-bottom h6 {
+    margin-bottom: 35px;
+}
+.footer .footer-bottom ul:before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    border-top: 2px solid #08a8fa;
+    position: absolute;
+    top: -16px;
+    left: 0;
+}
+.footer .copyright {
+    padding: 15px 40px;
+    border-top: 1px solid #323232;
+    font-size: 12px;
+}
+
+.arr_bottom_animation {
+    background-position: 0 0;
+    width: 23px;
+    height: 31px;
+    background-image: url('../images/arr_bottom_animation.png');
+    animation: arr_bottom 4s infinite;
+    -webkit-animation: arr_bottom 4s infinite;
+}
+#lang_switch {
+    margin: 25px 0 15px;
+    display: block;
+    width: 25px;
+    height: 16px;
+    background-image: url('../images/language.png'); 
+    cursor: pointer;
+}
+#lang_switch.switched {
+    background-position: 0 16px; 
+}
+/* @keyframes arr_bottom {
+    0% {background-position: 0 0;}
+    80% {background-position: 0 0;}
+    100% {background-position: -92px 0;}
+}
+@-webkit-keyframes arr_bottom {
+    0% {background-position: 0 0;}
+    80% {background-position: 0 0;}
+    100% {background-position: -92px 0;}
+} */
+.arr_bottom_animation {
+    width: 23px;
+    height: 31px;
+    background-image: url('../images/arr_bottom.png');
+    animation: arr_bottom 4s infinite;
+    -webkit-animation: arr_bottom 4s infinite;
+}
+@keyframes arr_bottom {
+    0% {background-position: 0 0;}
+    50% {background-position: 0 31px;}
+    100% {background-position: 0 62px;}
+}
+@-webkit-keyframes arr_bottom {
+    0% {background-position: 0 0;}
+    50% {background-position: 0 31px;}
+    100% {background-position: 0 62px;}
+}
+@media screen and (max-width: 40em) {
+    .third_page .service-cover {
+        height: 33.33333% !important;
+    }
+    .third_page .service-cover p {
+        font-size: 14px;
+    }
+    .third_page .service {
+        height: auto;
+        padding-top: 20px;
+    }
+}
